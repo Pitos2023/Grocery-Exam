@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="../grocery/homepage.css">
+</head>
+<body>
+    <div class ="navbar">
+            <a href="../grocerypage/homepage.html">Shop</a>
+    </div>
+
+    <div class="category">
+        <label for="category-dropdown">Category:</label>
+        <select id="category-dropdown" name="links" onchange="window.location.href=this.value">
+            <option value="/home">Vegetables</option>
+            <option value="/fruits">Fruits</option>
+            <option value="/snacks">Snacks</option>
+        </select>
+        <button type="button" id="add-items-btn">Add Items</button>
+    </div>
+
+    <div id="grocery-list" class ="grocery-list">
+        <div class="item item1">
+            <img src="../groceryimg/tomato.jfif"> Tomato ₱10.00 <br>
+        </div>
+        <div class="item item2">
+            <img src="../groceryimg/chippy.jfif"> Chippy ₱15.00 <br>
+        </div>
+        <div class="item item3">
+            <img src="../groceryimg/eggplant.jfif"> Eggplant ₱30.00 <br>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Item</h2>
+            <form id="item-form">
+                <label for="item-name">Item Name:</label><br>
+                <input type="text" id="item-name" name="item-name" required><br><br>
+                <label for="item-price">Item Price:</label><br>
+                <input type="text" id="item-price" name="item-price" required><br><br>
+                <label for="item-category">Category:</label><br>
+                <select id="item-category" name="item-category" required>
+                    <option id="Vegetables" value="Vegetables">Vegetables</option>
+                    <option id="Fruits" value="Fruits">Fruits</option>
+                    <option id="Snacks" value="Snacks">Snacks</option>
+                </select><br><br>
+                <label for="item-image">Upload Image:</label><br>
+                <input type="file" id="item-image" accept="image/*" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../grocery/modal.js"></script>
+</body>
+</html>

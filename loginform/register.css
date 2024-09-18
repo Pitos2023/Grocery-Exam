@@ -1,0 +1,58 @@
+body {
+    background-color: #632929;
+}
+
+.container {
+    border: white;
+    padding: 50px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 50px auto;
+    background-color: white;
+}
+
+input, label {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.submit, button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(86, 18, 9, 1);
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input-container button:hover {
+    cursor: pointer;
+    background-color: rgb(253, 253, 253);
+    color: rgba(86, 18, 9, 1);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 300px;
+    }
+
+    input, label, .submit, button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 250px;
+    }
+
+    input, label, .submit, button {
+        font-size: 14px;
+    }
+}
